@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Laboratorio8</string>
+    <string name="button">Button</string>
+    <string name="textview">TextView</string>
+    <string name="textView">TextView</string>
+    <string name="todo">TODO</string>
+    <string name="data">Data</string>
+    <string name="a_z">A - Z</string>
+    <string name="z_a">Z - A</string>
+    <string name="gender">Gender</string>
+    <string name="status">Status</string>
+    <string name="specie">Specie</string>
+    <string name="todo1">TODO</string>
+</resources>
