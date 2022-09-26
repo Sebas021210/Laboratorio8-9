@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/sharedPreferencesFragment">
+
+    <fragment
+        android:id="@+id/charactersFragment"
+        android:name="com.example.laboratorio8.CharactersFragment"
+        android:label="Characters"
+        tools:layout="@layout/characters_fragment" >
+        <action
+            android:id="@+id/action_charactersFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.laboratorio8.DetailsFragment"
+        android:label="Characters Details"
+        tools:layout="@layout/details_fragment" >
+        <argument
+            android:name="place"
+            app:argType="com.example.laboratorio8.entities.Place" />
+    </fragment>
+    <fragment
+        android:id="@+id/sharedPreferencesFragment"
+        android:name="com.example.laboratorio8.SharedPreferencesFragment"
+        android:label="Login"
+        tools:layout="@layout/shared_preferences_fragment" >
+        <action
+            android:id="@+id/action_sharedPreferencesFragment_to_charactersFragment"
+            app:destination="@id/charactersFragment" />
+    </fragment>
+</navigation>
